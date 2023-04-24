@@ -1,0 +1,38 @@
+<form [formGroup]="form">
+  <div class="form-group">
+
+    <div id="container" class="row d-flex justify-content-evenly">
+
+      <div class="col-md-4  col-xl-3 col-xxl-2">
+        <img src="assets/svg/login.svg" alt="Imagem de um boneco proximo de uma porta">
+      </div>
+      <div class="col-md-5 col-xl-4 col-xxl-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input formControlName="email" class="form-control" type="email" name="" id="email">
+
+        <label for="senha" class="form-label">Senha</label>
+        <input formControlName="senha" class="form-control" type="password" name="" id="senha">
+
+
+        <div class="row">
+
+          <div class="col-md-6 col-xl-3 col-xxl-6">
+
+            <button id="btn-entrar" [disabled]="formInvalid()" (click)="autenticar()" type="submit"
+              class="btn btn-primary mt-4">Entrar</button>
+          </div>
+
+          <div class="col-md-6 col-xl-6 col-xxl-6 d-flex justify-content-end">
+
+            <button id="btn-registrar" [routerLink]="['/cadastro']" type="submit"
+              class="btn btn-tertiary mt-4">Registrar</button>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>

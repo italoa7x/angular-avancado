@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AreaLogadoComponent } from './area-logado/area-logado.component';
-import { LoginComponent } from './login/login.component';
 import { LoginGuardGuard } from './login-guard.guard';
+import { AreaLogadoComponent } from './pages/auth/area-logado/area-logado.component';
+import { CadastroComponent } from './pages/auth/cadastro/cadastro.component';
+import { LoginComponent } from './pages/auth/login/login.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
 
+  {
+    path: 'cadastro',
+    component: CadastroComponent,
+    pathMatch: 'full',
+  },
   {
     path: '',
     redirectTo: 'login',

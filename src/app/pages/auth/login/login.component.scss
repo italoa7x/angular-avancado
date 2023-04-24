@@ -1,0 +1,30 @@
+#container {
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+}
+
+#btn-registrar:hover {
+  border-color: #00b0ff;
+}
+
+img {
+  width: 30vw;
+  height: 30vw;
+}
+
+#btn-entrar {
+  background-color: #00b0ff !important;
+  border: none;
+}
+
+input:focus {
+  border-color: #00b0ff !important;
+}
+
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    margin-top: 15vh;
+  }
+}
